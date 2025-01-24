@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Baloo 2", sans-serif;
+}
+
+body {
+  overflow: hidden;
+
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(0, 0, 0, .75);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/images/background.png');
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.62rem;
+}
+
+#app img {
+  width: 16.25006rem;
+  height: 19.93719rem;
+}
+
+#app .text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#app .text small {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#app .text p {
+  color: #D3132F;
+  font-size: 4rem;
+  line-height: 1.4rem;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+#app .time {
+  color: #fff;
+  font-size: 10.75rem;
+  font-weight: 300;
+  line-height: 1rem;
+  margin: 3rem 0;
+}
+
+#app button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.125rem;
+  border: none;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(180deg, #D3132F -19.69%, rgba(211, 19, 47, 0.75) 116.46%), linear-gradient(164deg, #8544E6 -11.2%, rgba(107, 49, 194, 0.27) 116.23%);
+
+  color: #fff;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+
+  gap: 0.62rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 200ms;
+}
+
+#app button:hover {
+  transform: scale(1.05);
+}
+
+#app .actions {
+  gap: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#app .actions button div {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 800;
+  padding: 0.2rem 0.75rem;
+  border-radius: 0.125rem;
+  border: 1.6px solid #fff;
+}
+
+#app .actions button.staff {
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(180deg, #D3132F -19.69%, rgba(211, 19, 47, 0.75) 116.46%);
+}
+
+#app .locales {
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#app .locales .loc {
+  width: 11.125rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 200ms linear;
+}
+
+#app .locales .loc:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#app .locales .loc p {
+  width: 11.125rem;
+  height: 2.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(180deg, #D3132F -19.69%, rgba(211, 19, 47, 0.75) 116.46%), linear-gradient(164deg, #8544E6 -11.2%, rgba(107, 49, 194, 0.27) 116.23%);
+
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app .locales .loc div {
+  width: 100%;
+  height: 6.875rem;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  object-fit: cover;
+  position: relative;
+}
+
+#app .locales .loc:nth-child(1) div {
+  background-image: url('../assets/images/south.png');
+}
+
+#app .locales .loc:nth-child(2) div {
+  background-image: url('../assets/images/north.png');
+}
+
+#app .locales .loc div::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+@media (min-width: 800px) {
+  #app, #notify {
+    zoom: 0.45 !important;
+  }
+}
+
+@media (min-width: 1100px) {
+  #app, #notify {
+    zoom: 0.85 !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  #app, #notify {
+    zoom: 0.55 !important;
+  }
+}
+
+@media (min-width: 1366px) {
+  #app, #notify {
+    zoom: 0.55 !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  #app, #notify {
+    zoom: 0.7 !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  #app, #notify {
+    zoom: 0.85 !important;
+  }
+}
+
+@media (min-width: 2000px) {
+  #app, #notify {
+    zoom: 0.8 !important;
+  }
+}
+
+@media (min-width: 3000px) {
+  #app, #notify {
+    zoom: 1.15 !important;
+  }
+}
+
+img#notify {
+  width: 26rem;
+  top: 2rem;
+  right: 2rem;
+  position: absolute;
+
+  display: none;
+}

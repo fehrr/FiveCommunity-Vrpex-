@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>_flaviin</title>
+  </head>
+  <body>
+    <div id = 'dealership'>
+      <header>
+        <div class = 'flyer'>
+          <div class = 'message'>
+            <p>NOVIDADE<br>DA SEMANA</p>
+            <hr>
+            <span>CONCESSIONÁRIA DA BELA RJ</span>
+          </div>
+          <div class = 'content'>
+            <div class = 'text'>
+              <span>VIPS</span>
+              <h2>MCLAREN P1</h2>
+              <button>CONFERIR NOVIDADES</button>
+            </div>
+            <img src="dealership/nui/assets/vehicle.svg" alt="vehicle">
+          </div>
+        </div>
+      </header>
+      <main>
+        <section id = 'home'>
+          <h3>CATEGORIAS</h3>
+          <div class = 'categorys'>
+            <div class = 'category' onclick="setType('sedans')">SEDAN</div>
+            <div class = 'category' onclick="setType('suvs')">SUV</div>
+            <div class = 'category' onclick="setType('motos')">MOTOS</div>
+            <div class = 'category' onclick="setType('imports')">IMPORTS</div>
+            <div class = 'category' onclick="setType('service')">TRUCKS</div>
+            <div class = 'category' onclick="setType('outros')">OUTROS</div>
+            <div class = 'category' onclick="setType('vip')">VIPS</div>
+          </div>
+          <h3>MAIS VENDIDOS</h3>
+          <div class = 'vehiclesContent'>
+            <i class = 'fa-regular fa-arrow-left' onclick="updateSlide('left', this)"></i>
+            <div class = 'vehicles'></div>
+            <i class = 'fa-regular fa-arrow-right' onclick="updateSlide('right', this)"></i>
+          </div>
+          <div class = 'myVehicles'>
+            <span onclick="setType('myVehicles')">MEUS VEÍCULOS</span>
+          </div>
+        </section>
+        <section id = 'category' style="display: none;">
+          <div class = 'title'>
+            <button onclick="setPage()">VOLTAR</button>
+            <div class = 'search'>
+              <i class = 'fa-regular fa-magnifying-glass'></i>
+              <input type = 'text' id = 'search' oninput="searchVehicle(event)">
+            </div>
+            <button>BUSCAR</button>
+          </div>
+          <div class = 'flyer'>
+            <div class = 'text'>
+              <h2>CATEGORIA</h2>
+              <span>VIPS</span>
+            </div>
+            <img src = './assets/vehicle.svg' />
+          </div>
+          <div class = 'vehicles'></div>
+        </section>
+        <section id = 'vehiclePreview' style="display: none;">
+          <div class = 'title'>
+            <button onclick="setPage()">VOLTAR</button>
+            <div class = 'search'>
+              <i class = 'fa-regular fa-magnifying-glass'></i>
+              <input type = 'text' id = 'search' onclick = "searchVehicle(event)">
+            </div>
+            <button>BUSCAR</button>
+          </div>
+          <div class = 'flyer'>
+            <div class = 'preview'>
+              <div class = 'interactions'>
+                <h4>VEÍCULO</h4>
+                <h2>MCLAREN P1</h2>
+                <div class = 'buttons'>
+                  <button>COMPRAR</button>
+                  <button>TEST-DRIVE</button>
+                </div>
+              </div>
+              <img src = './assets/vehicle.svg'>
+            </div>
+            <div class = 'vehicleStats'>
+              <div class = 'info'>
+                <i class="fa-solid fa-box"></i>
+                <p>ESTOQUE</p>
+              </div>
+              <div class = 'info'>
+                <i class="fa-sharp fa-solid fa-car-side"></i>
+                <p>500 KG</p>
+              </div>
+              <div class = 'info'>
+                <i class="fa-solid fa-gauge"></i>
+                <p>345 KM/H</p>
+              </div>
+              <div class = 'info'>
+                <i class="fa-solid fa-gas-pump"></i>
+                <p>GASOLINA</p>
+              </div>
+              <div class = 'info'>
+                <i class="fa-solid fa-seat-airline"></i>
+                <p>2 ASSENTOS</p>
+              </div>
+            </div>
+          </div>
+          <div class = 'moreVehicles'>
+            <h5>CONFIRA MAIS VEICULOS <b>VIPS</b></h5>
+            <div class = 'vehiclesContent'>
+              <i class = 'fa-regular fa-arrow-left' onclick="updateSlide('left', this)"></i>
+              <div class = 'vehicles'></div>
+              <i class = 'fa-regular fa-arrow-right' onclick="updateSlide('right', this)"></i>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="dealership/nui/script.js"></script>
+  </body>
+</html>

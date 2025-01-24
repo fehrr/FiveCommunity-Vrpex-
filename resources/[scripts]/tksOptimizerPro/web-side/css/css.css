@@ -1,0 +1,994 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-drag: none;
+}
+
+html {
+    resize: none;
+}
+
+:root {
+    --body-color: #cbd5e1;
+    --clr-segunadry: #7d4ae2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani';
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: var(--body-color);
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: -1;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.18) 0%, #08004ec9 100%);
+}
+
+/* ------------------------------------------------------ */
+
+.menuzin {
+    position: absolute;
+    width: 45vw;
+    height: 75vh;
+    top: 50%;
+    left: 45%;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 2.0s ease, opacity 0.5s ease;
+    background-image: url('../assets/Back_Fundo.webp');
+    background-size: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.imgFund {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    background: rgba(118, 39, 245, 0.452);
+}
+
+#particles-js-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.btnsMenu {
+    position: absolute;
+    width: 40vw;
+    height: 50vh;
+    top: 9vw;
+    left: 7vw;
+}
+
+.op1 {
+    position: absolute;
+    width: 35vw;
+    height: 19vh;
+    top: 1vw;
+    border-radius: 1.5vw;
+    border: none;
+    cursor: pointer;
+    background-image: url('../assets/Back_Opcao.webp');
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+}
+
+.op1 h2 {
+    position: absolute;
+    font-family: "Inter";
+    font-size: 2vw;
+    top: 0.5vw;
+    left: 1.2vw;
+    color: white;
+}
+
+.op1 h1 {
+    position: absolute;
+    top: 0.5vw;
+    left: 1vw;
+    font-family: "Inter";
+    font-size: 4.5vw;
+    font-weight: 800;
+    background: linear-gradient(98deg, #FF3E78 30%, #FF749E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.op2 {
+    position: absolute;
+    width: 35vw;
+    height: 19vh;
+    top: 13vw;
+    border-radius: 1.5vw;
+    border: none;
+    cursor: pointer;
+    background-image: url('../assets/Back_Opcao.webp');
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+}
+
+.op2 h2 {
+    position: absolute;
+    font-family: "Inter";
+    font-size: 2vw;
+    top: 0.5vw;
+    left: 1vw;
+    color: white;
+}
+
+.op2 h1 {
+    position: absolute;
+    top: 0.5vw;
+    left: 1vw;
+    font-family: "Inter";
+    font-size: 4.5vw;
+    font-weight: 800;
+    background: linear-gradient(98deg, #FF3E78 30%, #FF749E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.op1:hover,
+.op2:hover {
+    background-image: url('../assets/Back_Opcao.webp');
+    opacity: 90%;
+}
+
+.exitF {
+    position: absolute;
+    width: 10vw;
+    height: 3.5vw;
+    bottom: 1vw;
+    right: 0.5vw;
+    font-size: 0.5vw;
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.exitF img {
+    position: absolute;
+    width: 2vw;
+    top: 0.7vw;
+    left: 0.5vw;
+}
+
+.exitF:hover {
+    color: rgb(199, 199, 199);
+}
+
+.fps {
+    position: absolute;
+    width: 7.5vw;
+    height: 2.5vw;
+    top: 2vw;
+    right: 3vw;
+    border-radius: 0.5vw;
+    background-color: white;
+}
+
+.fps h1 {
+    position: absolute;
+    top: -.5vw;
+    left: 0.7vw;
+    font-family: "Inter";
+    font-size: 1.4vw;
+    font-weight: 800;
+    background: #6100FF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ------------------------------------------------------ */
+
+.backgrond {
+    position: absolute;
+    width: 35vw;
+    height: 75vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.9s ease, border-radius 0.9s ease;
+    background-image: url('../assets/Back_Lado.webp');
+    background-size: 100%;
+    border-radius: 3vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 8;
+}
+
+.logo img {
+    position: absolute;
+    width: 20vw;
+    left: 1.5vh;
+}
+
+.btn {
+    position: absolute;
+    width: 27vw;
+    height: 5vh;
+    margin-top: 55vh;
+    left: 4vw;
+    border: none;
+    background: #6100FF;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #6200ffe3;
+}
+
+.btn h1 {
+    margin-left: 0vw;
+    margin-top: 1.1vh;
+    font-family: "Inter";
+    font-size: 1.2vw;
+    color: white;
+}
+
+.title {
+    width: 30vw;
+    margin-top: 10vh;
+    margin-left: 2.5vw;
+    font-size: 1.3vh;
+    text-align: left;
+    font-family: "Inter";
+}
+
+.title h1 {
+    color: black;
+}
+
+.title b {
+    background: #6100FF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title p {
+    margin-top: -1vh;
+    font-size: 0.7vw;
+    color: #6200ff;
+}
+
+.infos {
+    width: 30vw;
+    height: 24vh;
+    margin-left: 2.5vw;
+    margin-top: 1vw;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 1vw;
+}
+
+.blockone {
+    width: 4vw;
+    height: 4vw;
+    margin-left: 1vw;
+    margin-top: 1.55vw;
+    background: #6100FF;
+    border-radius: .8vw;
+}
+
+.blockone i {
+    position: relative;
+    margin-left: 0.7vw;
+    margin-top: 1vw;
+    font-size: 2vw;
+    color: white;
+}
+
+.blocktwo {
+    width: 4vw;
+    height: 4vw;
+    margin-left: 1vw;
+    margin-top: 2vw;
+    background: #6100FF;
+    border-radius: .8vw;
+}
+
+.blocktwo i {
+    position: relative;
+    margin-left: 0.9vw;
+    margin-top: 1vw;
+    font-size: 2vw;
+    color: white;
+}
+
+.infos p {
+    position: absolute;
+    width: 65%;
+    margin-left: 5.5vw;
+    margin-top: -3.7vw;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 0.9vw;
+    color: black;
+}
+
+.infos p2 {
+    position: absolute;
+    width: 65%;
+    margin-left: 5.5vw;
+    margin-top: 2.4vw;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 0.9vw;
+    color: black;
+}
+
+
+/* ------------------------------------------------------ */
+
+.graficos {
+    position: absolute;
+    width: 70vw;
+    height: 82vh;
+    top: 5vw;
+    left: 15vw;
+    border-radius: 1.5vw;
+    background-image: url('../assets/Back_Fundo.webp');
+    background-size: cover;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+}
+
+.exitV {
+    position: absolute;
+    width: 10vw;
+    height: 3.5vw;
+    top: 1vw;
+    left: 1vw;
+    font-size: 0.5vw;
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.exitV img {
+    position: absolute;
+    width: 2vw;
+    top: 0.7vw;
+    left: 0.5vw;
+}
+
+.exitV:hover {
+    color: rgb(199, 199, 199);
+}
+
+.aplicar {
+    position: absolute;
+    width: 10vw;
+    height: 3.5vw;
+    bottom: 2.5vw;
+    left: 30vw;
+    font-size: 0.5vw;
+    border-radius: 0.5VW;
+    border: none;
+    background: none;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.108);
+    animation: pulse 0.5s infinite alternate ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.aplicar h1 {
+    font-size: 1.5vw;
+    background: #6100FF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+
+.Fund {
+    position: absolute;
+    width: 70vw;
+    height: 82vh;
+    top: 0vw;
+    left: 0vw;
+    border-radius: 1.5vw;
+    background-color: rgba(118, 39, 245, 0.356);
+    z-index: 7;
+}
+
+.lineUm {
+    position: absolute;
+    width: 30vw;
+    height: 1vh;
+    top: 0;
+    left: 20vw;
+    background-color: white;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+    z-index: 9;
+}
+
+.lineDois {
+    position: absolute;
+    width: 30vw;
+    height: 1vh;
+    bottom: 0;
+    left: 20vw;
+    background-color: white;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    z-index: 9;
+}
+
+.foguete img {
+    position: absolute;
+    width: 8vw;
+    top: 0vw;
+    left: 0.1vw;
+    z-index: 9;
+}
+
+.circleF {
+    position: absolute;
+    width: 8.5vw;
+    height: 8.5vw;
+    top: 4vw;
+    left: 30.5vw;
+    border-radius: 50vw;
+    border: solid 0.1vw rgba(255, 255, 255, 0.575);
+    z-index: 9;
+}
+
+.circleFpul {
+    position: absolute;
+    width: 9vw;
+    height: 9vw;
+    top: 3.77vw;
+    left: 30.25vw;
+    border-radius: 50vw;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
+    animation: pulse 2s infinite alternate ease-in-out;
+}
+
+.circleFpul2 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 3.259vw;
+    left: 29.74vw;
+    border-radius: 50vw;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
+    animation: pulse 1s infinite alternate ease-in-out;
+}
+
+.slides {
+    position: absolute;
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-top: 16vw;
+    z-index: 10;
+}
+
+.slides2 {
+    position: absolute;
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-top: 14vw;
+    z-index: 10;
+}
+
+.slidecontainer {
+    width: 50%;
+    margin-bottom: 2vh;
+}
+
+.slidecontainer h1 {
+    position: relative;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 1vw;
+    margin-left: 5vw;
+    color: white;
+    z-index: 10;
+}
+
+.slider {
+    appearance: none;
+    width: 70%;
+    height: 3vh;
+    margin-left: 5vw;
+    border-radius: 0.4vw;
+    outline: none;
+    background: white;
+    z-index: 10;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.3vw;
+    height: 3vh;
+    background: #BDBDBD;
+    border-radius: 0.3vw;
+    cursor: grab;
+    z-index: 10;
+}
+
+.iconback {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 2.5vw;
+    background: white;
+    border-radius: 0.4vw;
+    margin-top: -4vh;
+    z-index: 20;
+}
+
+.iconback i {
+    margin-left: 0.46vw;
+    margin-top: 0.75vh;
+    font-size: 1vw;
+    color: #6100FF;
+    z-index: 9;
+}
+
+/* ------------------------------------------------------ */
+
+.visual {
+    position: absolute;
+    width: 70vw;
+    height: 82vh;
+    top: 5vw;
+    left: 15vw;
+    border-radius: 1.5vw;
+    background-image: url('../assets/Back_Fundo.webp');
+    background-size: cover;
+    z-index: 8;
+    display: none;
+    overflow: hidden;
+}
+
+#particles-js-visual {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+/* ------------------------------------------------------ */
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+
+    to {
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 13;
+    margin-top: 12vw;
+}
+
+.switch-container h1 {
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    color: white;
+}
+
+#switch1 {
+    top: 8vw;
+    left: 9.5vw;
+}
+
+#switch2 {
+    top: 12vw;
+    left: 9.5vw;
+}
+
+#switch3 {
+    top: 8vw;
+    right: 10.95vw;
+}
+
+#switch4 {
+    top: 12vw;
+    right: 10.95vw;
+}
+
+.toggle-switch {
+    width: 4vw;
+    height: 4.5vw;
+    margin-left: 1vw;
+}
+
+.switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-label {
+    position: relative;
+    display: inline-block;
+    width: 4vw;
+    height: 2.3vw;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 0.2vw solid rgba(108, 108, 108, 0.497);
+    border-radius: 34px;
+    transition: background-color 0.4s;
+}
+
+.switch-label:before {
+    content: "";
+    position: absolute;
+    width: 1.6vw;
+    height: 1.6vw;
+    left: 0.2vw;
+    bottom: 0.2vw;
+    background-color: rgb(71, 71, 71);
+    border-radius: 50%;
+    transition: transform 0.9s, background-color 0.4s;
+}
+
+.switch-input:checked + .switch-label:before {
+    background-color: #6100FF;
+    transform: translateX(1.6vw);
+}
+
+.iconback2 {
+    max-width: 2vw;
+    max-height: 2vw;
+    margin-top: 0.3vw;
+    margin-right: 0.5vw;
+    border-radius: 0.4vw;
+    font-size: 2vw;
+    background-color: white;
+}
+
+.iconback2 i {
+    min-width: 2vw;
+    min-height: 2vw;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    font-size: 1vw;
+    color: #6100FF;
+}
+
+
+
+
+
+
+
+.containerStaff::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: -1;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.18) 0%, #08004ec9 100%);
+}
+
+.backStaff {
+    position: absolute;
+    width: 70vw;
+    height: 75vh;
+    top: 50%;
+    left: 50%;
+    border-radius: 2vw;
+    transform: translate(-50%, -50%);
+    transition: transform 2.0s ease, opacity 0.5s ease;
+    background-image: url('../assets/Back_Fundo.webp');
+    background-size: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.logostaff img {
+    position: absolute;
+    width: 20vw;
+    left: 50vh;
+}
+
+.imgFundStaff {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    background: #6100FF;
+    opacity: 50%;
+}
+
+.whiteStaff {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0vh;
+    left: 0vh;
+    border-top-left-radius: 6vw;
+    border-top-right-radius: 6vw;
+    background: url('../assets/Back_Lado.webp');
+    background-size: auto;
+}
+
+.dashboard {
+    position: relative;
+    width: 85%;
+    height: 35%;
+    left: 10vh;
+    top: 4vh;
+    background: #6100FF;
+    border-radius: 2vw;
+}
+
+.imgdash {
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    bottom: 0vh;
+    background-image: url('../assets/Back_Fundo.webp');
+    background-size: cover;
+    opacity: 50%;
+}
+
+.dados {
+    position: absolute;
+    display: flex;
+    gap: 0.7vw;
+    width: 99%;
+    height: 90%;
+    bottom: 1vh;
+    left: 0.7vh;
+}
+
+.dadosContainer {
+    position: relative;
+    width: 23%;
+    height: 75%;
+    left: 1.8vh;
+    top: 2.5vh;
+    background: #1D004B;
+    border: 7px solid rgb(0, 0, 0, 0.20);
+    border-radius: 1.5vw;
+}
+
+.dadosContainer h1 {
+    position: relative;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 1vw;
+    top: 0.2vw;
+    left: 0.5vw;
+    color: rgb(255, 255, 255, 0.9);
+}
+
+.number {
+    position: relative;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 3.5vw;
+    bottom: 1vw;
+    left: 0.5vw;
+    color: #FF749E;
+}
+
+.options {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    height: 38%;
+    bottom: 1.2vh;
+    left: 10vh;
+}
+
+.optionContainer {
+    position: relative;
+    width: 40%;
+    height: 28%;
+    background: #1D004B;
+    border: 7px solid rgb(0, 0, 0, 0.20);
+    border-radius: 0.6vw;
+}
+
+.optionContainer h1 {
+    position: absolute;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 1.8vw;
+    bottom: 0.4vh;
+    left: 0.5vw;
+    color: rgb(255, 255, 255, 0.9);
+}
+
+.optionContainer p {
+    position: absolute;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 1.2vw;
+    top: 1.5vh;
+    left: 0.5vw;
+    color: #FF749E;
+}
+
+.info1 {
+    position: absolute;
+    display: none;
+    width: 7vw;
+    height: 6vh;
+    top: 49.3vh;
+    left: 53vh;
+    transform: translate(-50%, -50%); 
+    background-color: #FF749E;
+    border-radius: 0.5vw;
+    color: white;
+    padding: 10px;
+    z-index: 9999;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 2.5vw;
+    color: #1D004B;
+    cursor: pointer;
+    border: none;
+}
+
+.info1:hover, .info2:hover, .info3:hover, .info4:hover, .info5:hover {
+    background: #ff95b5;
+}
+
+.info2 {
+    position: absolute;
+    display: none;
+    width: 7vw;
+    height: 6vh;
+    top: 59vh;
+    left: 53vh;
+    transform: translate(-50%, -50%); 
+    background-color: #FF749E;
+    border-radius: 0.5vw;
+    color: white;
+    padding: 10px;
+    z-index: 9999;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 2.5vw;
+    color: #1D004B;
+    cursor: pointer;
+    border: none;
+}
+
+.info3 {
+    position: absolute;
+    display: none;
+    width: 7vw;
+    height: 6vh;
+    top: 68.5vh;
+    left: 53vh;
+    transform: translate(-50%, -50%); 
+    background-color: #FF749E;
+    border-radius: 0.5vw;
+    color: white;
+    padding: 10px;
+    z-index: 9999;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 2.5vw;
+    color: #1D004B;
+    cursor: pointer;
+    border: none;
+}
+
+.info4 {
+    position: absolute;
+    display: none;
+    width: 7vw;
+    height: 6vh;
+    top: 49.3vh;
+    left: 105.4vh;
+    transform: translate(-50%, -50%); 
+    background-color: #FF749E;
+    border-radius: 0.5vw;
+    color: white;
+    padding: 10px;
+    z-index: 9999;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 2.5vw;
+    color: #1D004B;
+    cursor: pointer;
+    border: none;
+}
+
+.info5 {
+    position: absolute;
+    display: none;
+    width: 7vw;
+    height: 6vh;
+    top: 59vh;
+    left: 105.4vh;
+    transform: translate(-50%, -50%); 
+    background-color: #FF749E;
+    border-radius: 0.5vw;
+    color: white;
+    padding: 10px;
+    z-index: 9999;
+    font-family: "Inter";
+    font-weight: 1000;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 2.5vw;
+    color: #1D004B;
+    cursor: pointer;
+    border: none;
+}

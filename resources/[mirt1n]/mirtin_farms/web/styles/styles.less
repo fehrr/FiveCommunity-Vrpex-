@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+
+
+
+  .video {
+    width: 800px;
+    background-color: #1c1c1c;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    z-index: 9999;
+    padding: 20px;
+    padding-top: 25px;
+    border-radius: 8px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    video {
+      width: 100%;
+    }
+    span {
+      top: -15px;
+      left: 50%;
+      transform: translate(-50%);
+      position: absolute;
+
+      color: white;
+      font-size: 15px;
+      font-weight: 900;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 35px;
+      height: 35px;
+      background-color: #fe1717;
+      border-radius: 50%;
+    }
+  }
+
+  #app {
+    width: 699px;
+    // height: 475px;
+    border-radius: 9px;
+    background: rgba(44, 26, 26, 0.9);
+    box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.45);
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    z-index: 0.9;
+    padding: 30px 35px;
+
+    display: none;
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      margin-bottom: 40px;
+      
+      .left {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 60px;
+        }
+  
+        .title {
+          small {
+            font-size: 14px;
+            font-weight: 300;
+            color: #FFFFFF;
+            letter-spacing: 0.63em;
+          }
+  
+          h1 {
+            font-weight: 900;
+            font-size: 64px;
+            letter-spacing: -0.04em;
+            color: #ff0707;
+            margin-top: -12px;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .right {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        p {
+          color: white;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        i {
+          width: 40px;
+          height: 40px;
+          background-color: #ff000038 !important;
+          border-radius: 50%;
+          margin-right: 20px;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 20px;
+          transition: 0.4s;
+          &:hover {
+            color: #ff0707;
+          }
+        }
+      }
+    }
+
+    main {
+      overflow: auto;
+      max-height: 286px;
+
+      z-index: 1;
+
+      .route {
+        width: 636px;
+        height: 78px;
+        border-radius: 4px;
+        background-image: linear-gradient(
+          to right,
+          rgba(254, 23, 23, 0.6) 0%,
+          rgba(112, 27, 27, 0.6) 50%,
+          rgba(44, 26, 26, 0.6) 100%
+        );
+        
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 23px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+        
+
+        .itemInfo {
+          display: flex;
+          align-items: center;
+
+          position: relative;
+
+          img {
+            width: 80px;
+            height: 80px;
+          }
+
+          .name {
+            small {
+              font-weight: 400;
+              font-size: 12px;
+              letter-spacing: 0.55em;
+              color: #FFFFFF;
+            }
+
+            p {
+              color: #FFFFFF;
+              font-size: 28px;
+              font-weight: 900;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        .buttons {
+          gap: 8px;
+          display: flex;
+          align-items: center;
+
+          button {
+            width: 125px;
+            border-radius: 3px;
+            background: transparent;
+            border: 0.6px solid #fe1717;
+  
+            padding: 7px 10px;
+  
+            font-weight: 900;
+            font-size: 14 px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+  
+            cursor: pointer;
+            transition: .2s linear;
+  
+            &:hover {
+              background: #fe1717;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}

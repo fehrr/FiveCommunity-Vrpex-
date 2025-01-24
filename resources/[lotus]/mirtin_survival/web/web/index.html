@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+
+    <title>pedrosilvx</title>
+  </head>
+  <body>
+    <img src="./assets/images/notify.png" id="notify" />
+
+    <div id="app">
+      <div class="text">
+        <img src="./assets/icons/skull.svg" />
+        <h3>Você está morto</h3>
+        <p class="time">05:47</p>
+      </div>
+
+      <div class="actions">
+        <button onclick="callStaff()" class="staff">
+          <div>SOS</div>
+          APERTE PARA CHAMAR UM <strong>STAFF</strong>
+        </button>
+        <button onclick="callFireman()">
+          <div>SOS</div>
+          APERTE PARA CHAMAR UM <strong>BOMBEIRO</strong>
+        </button>
+      </div>
+    </div>
+
+    <div class="locales">
+      <h4>Escolha um local para nascer</h4>
+      <div class="locs">
+        <div class="loc" onclick="spawn('south')">
+          <div></div>
+          <p>Sul</p>
+        </div>
+        <div class="loc" onclick="spawn('north')">
+          <div></div>
+          <p>Norte</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="message">
+      Para zerar o tempo de desmaio <br />
+      você precisa ser finalizado com <strong>/finalizar</strong>
+    </p>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

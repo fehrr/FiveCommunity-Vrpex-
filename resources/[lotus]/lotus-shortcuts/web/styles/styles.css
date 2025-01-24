@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  display: none;
+  overflow: hidden;
+}
+
+#shortcuts {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  top: 50%;
+  right: 2rem;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+#shortcuts header {
+  height: 2.5rem;
+  width: 20.9375rem;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#shortcuts header .bar {
+  width: 20.9375rem;
+  height: 1.5rem;
+  border-radius: 0.125rem;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.22) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+#shortcuts header .title {
+  height: 2.5rem;
+  padding: 0.1875rem 1.125rem;
+  position: absolute;
+
+  border-radius: 0.125rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(164deg, rgba(211, 19, 47) -11.2%, rgba(211, 19, 47, 0.5) 116.23%);
+
+  gap: 0.38rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#shortcuts header .title p {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  width: max-content;
+}
+
+#shortcuts main {
+  gap: 0.62rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  border-radius: 0.125rem;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.43) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+
+  width: 100%;
+
+  padding: 1rem;
+}
+
+#shortcuts main .info {
+  gap: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#shortcuts main .info span {
+  padding: 0.75rem 0.625rem;
+
+  border-radius: 0.125rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(
+    164deg,
+    rgba(211, 19, 47) -11.2%,
+   rgba(211, 19, 47, 0.5)(107, 49, 194, 0.27) 116.23%
+  );
+
+  color: #fff;
+  font-size: 0.875rem;
+
+  width: 6rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 10%;
+}
+
+#shortcuts main .info p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  #shortcuts {
+    zoom: .7;
+  }
+}

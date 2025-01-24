@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+
+    <title>_flaviin</title>
+  </head>
+  <body>
+    <div id = 'garage'>
+      <section id = 'garageContent'>
+        <section id = 'preview'>
+          <div class = 'vehiclePreview'>
+            <h1>MCLAREN P1</h1>
+            <p>CATEGORIA: <b>VIP</b></p>
+            <p>PLACA: <strong>438UYG2H</strong></p>
+            <img src="http://45.40.99.21:4020/lotus/carros/t20.png" alt="vehicle">
+          </div>
+          <div class = 'vehicleStats'>
+            <h2>DADOS GERAIS</h2> 
+            <div class = 'stats'>
+              <div class = 'stat'>
+                <i class = 'fa-solid fa-coins'></i>
+                <div class = 'text'>
+                  <p>STATUS DA TAXA</p>
+                  <span>PAGO</span>
+                </div>
+              </div>
+              <div class = 'stat'>
+                <i class = 'fa-solid fa-coins'></i>
+                <div class = 'text'>
+                  <p>STATUS DO VEÍCULO</p>
+                  <span>LIBERADO</span>
+                </div>
+              </div>
+            </div>
+            <div class = 'informations'>
+              <div class = 'info'>
+                <p>STATUS DO MOTOR</p>
+                <div class = 'progressContainer'>
+                  <div class = 'progress'>
+                    <div class = 'value'></div>
+                  </div>
+                  <p>100%</p>
+                </div>
+              </div>
+              <div class = 'info'>
+                <p>STATUS DO LATARIA</p>
+                <div class = 'progressContainer'>
+                  <div class = 'progress'>
+                    <div class = 'value'></div>
+                  </div>
+                  <p>100%</p>
+                </div>
+              </div>
+              <div class = 'info'>
+                <p>STATUS DO COMBUSTÍVEL</p>
+                <div class = 'progressContainer'>
+                  <div class = 'progress'>
+                    <div class = 'value'></div>
+                  </div>
+                  <p>100%</p>
+                </div>
+              </div>
+              <div class = 'info'>
+                <p id = 'weight'>CAPACIDADE DO PORTA MALAS</p>
+                <div class = 'progressContainer'>
+                  <p>0 / 0 KG</p>
+                </div>
+              </div>
+            </div>
+            <div class = 'buttons'>
+              <button>RETIRAR</button>
+              <button>GUARDAR</button>
+              <button>GUARDAR PROXIMO</button>
+            </div>
+          </div>
+        </section>
+        <section id = 'list'>
+          <div class = 'vehiclesSearch'>
+            <h2>LISTA DOS MEUS VEÍCULOS</h2>
+            <div class = 'search'>
+              <i class = 'fa-regular fa-magnifying-glass'></i>
+              <input type = 'text' id = 'searchInput'  oninput="searchVehicle(event)">
+            </div>
+            <button>BUSCAR</button>
+          </div>
+          <div class = 'vehiclesContainer'>
+            <i class = 'fa-regular fa-arrow-left' onclick="updateSides('left')"></i>
+            <div class = 'vehicles'>
+              <div class="vehicle selected">
+                <p>t20</p>
+                <img src="http://45.40.99.21:4020/lotus/carros/t20.png" alt="vehicle">
+                <span>test</span>
+              </div>
+              <div class="vehicle">
+                <p>t20</p>
+                <img src="http://45.40.99.21:4020/lotus/carros/t20.png" alt="vehicle">
+                <span>test</span>
+              </div>
+            </div>
+            <i class = 'fa-regular fa-arrow-right' onclick="updateSides('right')"></i>
+          </div>
+        </section>
+      </section>
+      <section id = 'garageContent' style="display: none;">
+        <p id = 'notVehicles'>VOCÊ NÃO POSSUI NENHUM VEICULO!</p>
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="garages/nui/script.js"></script>
+  </body>
+</html>

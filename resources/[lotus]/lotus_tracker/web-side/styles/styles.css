@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+#app {
+  width: 481px;
+  height: 251px;
+  background: rgba(14, 15, 23, 0.7);
+  border-radius: 6px;
+
+  left: 35px;
+  bottom: 35px;
+  position: absolute;
+
+  overflow: hidden;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  animation: fadeIn .4s linear;
+}
+
+#app::before {
+  content: "";
+  width: 226px;
+  height: 73px;
+  background: rgba(23, 82, 254, 0.5);
+  filter: blur(43px);
+  border-radius: 50%;
+
+  left: 50%;
+  bottom: -70px;
+  transform: translate(-50%, 0);
+  position: absolute;
+}
+
+#app .list {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  height: 136px;
+  margin-bottom: 34px;
+}
+
+#app .list img {
+  transition: .4s;
+}
+
+#app .list img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#app .list .vehicles {
+  width: 406px;
+  gap: 18px;
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+ 
+#app .list .vehicles .vehicle {
+  height: 130px;
+  width: 120px;
+  border-radius: 4px;
+
+  flex: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding-bottom: 5px;
+
+  background-color: #1c213b7a;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(http://45.40.99.21:4020/imgfusion/vehicles/v1/t20.png);
+}
+
+#app .list .vehicles .vehicle.selected {
+  background-color: #1c213bd8;
+  box-shadow: inset 0 0 0 1px #3454ff;
+}
+
+#app .list .vehicles .vehicle p {
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+#app button {
+  width: 270px;
+  height: 21px;
+  background: #1a3dff;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  border: none;
+  outline: none;
+}
+
+#app button:hover {
+  background: linear-gradient(180deg, #0e31ef 0%, #3454ff 100%);
+  border-radius: 3px;
+}
+
+.fadeOut {
+  animation: fadeOut .4s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}

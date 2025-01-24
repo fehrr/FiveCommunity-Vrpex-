@@ -1,0 +1,886 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#dealership {
+  width: 68.6875rem;
+  height: 43.5rem;
+  border-radius: 0.125rem;
+  background: radial-gradient(
+      323.05% 378.13% at 65.23% 23.31%,
+      #000 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(17, 17, 17, 0.85);
+
+  padding: 1rem;
+
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#dealership::-webkit-scrollbar {
+  width: 0;
+}
+
+#dealership header .searchContent {
+  display: flex;
+  align-items: center;
+}
+
+#dealership header .searchContent span {
+  width: 13.62525rem;
+  height: 1.389rem;
+  background: rgba(211, 19, 47, 0.2);
+
+  color: #fff;
+  text-align: center;
+  font-size: 0.86238rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dealership header {
+  width: 66.6875rem;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem 1.56rem;
+  margin-bottom: 1rem;
+}
+
+#dealership header .searchContent .search {
+  width: 43.375rem;
+  height: 1.8125rem;
+  background: rgba(255, 255, 255, 0.05);
+
+  padding-left: 1.5rem;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 0.75rem;
+  margin-right: 0.65rem;
+}
+
+#dealership header .searchContent .search i {
+  color: white;
+  margin-right: 1.15rem;
+  font-size: 0.7rem;
+}
+
+#dealership header .searchContent .search input {
+  width: 40rem;
+  height: 1.8125rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.07);
+
+  border: 0;
+  outline: none;
+
+  color: white;
+
+  padding: 0 1rem;
+}
+
+#dealership header .searchContent button {
+  width: 5.15906rem;
+  height: 1.389rem;
+  border: 1.058px solid #fff;
+
+  background: transparent;
+
+  color: #fff;
+  text-align: center;
+  font-size: 0.86238rem;
+  font-weight: 700;
+}
+
+#dealership header .flyer {
+  margin-top: 1.27rem;
+}
+
+#dealership header .flyer .message {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#dealership header .flyer .message p {
+  color: #fff;
+  font-size: 1.44931rem;
+  font-weight: 300;
+  line-height: 77.9%;
+}
+
+#dealership header .flyer .message hr {
+  flex: 1;
+  height: 0.1rem;
+  border: 0;
+  background: #ffffff1a;
+}
+
+#dealership header .flyer .message span {
+  height: 1.389rem;
+  border-radius: 0.125rem;
+  border: 1px solid rgba(211, 19, 47);
+
+  color: #fff;
+  text-align: center;
+  font-size: 0.86238rem;
+  font-weight: 700;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+#dealership header .flyer .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#dealership header .flyer .content .text span {
+  width: 4.0625rem;
+  height: 1.304rem;
+  color: #fff;
+  font-size: 0.99363rem;
+  font-weight: 700;
+  border-radius: 0.125rem;
+  border: 1.058px solid rgba(211, 19, 47);
+  padding: 0.05rem 0.87rem;
+}
+
+#dealership header .flyer .content .text h2 {
+  color: rgba(17, 17, 17, 0.85);
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: rgba(211, 19, 47);
+  -webkit-text-fill-color: rgba(211, 19, 47, 0.5);
+  font-size: 4.125rem;
+  font-weight: 900;
+}
+
+#dealership header .flyer .content .text button {
+  width: 13.875rem;
+  height: 1.9375rem;
+  border: none;
+  border-radius: 0.125rem;
+  border: 1px solid rgba(211, 19, 47);
+  background-color: transparent;
+
+  color: #fff;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 400;
+
+  transition: 200ms;
+}
+
+#dealership header .flyer .content .text button:hover {
+  border-radius: 0.125rem;
+  border: 2px solid rgba(211, 19, 47);
+  background: radial-gradient(
+      334.87% 334.87% at 70.91% 0%,
+      rgba(211, 19, 47) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(17, 17, 17, 0.85);
+}
+
+#dealership header .flyer .content img {
+  width: 35%;
+}
+
+#dealership main {
+  width: 100%;
+}
+
+#dealership main section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#dealership main section h3 {
+  width: max-content;
+
+  padding: 0.05rem 0.4rem;
+  margin-bottom: 0.82rem;
+
+  border-radius: 0.125rem;
+  background: rgba(255, 255, 255, 0.03);
+
+  color: #fff;
+  font-size: 1.30506rem;
+  font-weight: 700;
+}
+
+#dealership main section#home .categorys {
+  gap: 0.69rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#dealership main section#home .categorys .category {
+  width: 8.9375rem;
+  height: 19.0625rem;
+  border-radius: 0.125rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.55) 100%
+    ),
+    url(<path-to-image>),
+    lightgray -175.231px -1.188px / 333.021% 104.066% no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  text-align: center;
+  font-size: 29px;
+  font-weight: 700;
+
+  background-size: 105% 105% !important ;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+
+  cursor: pointer;
+}
+
+#dealership main section#home .categorys .category:nth-child(1) {
+  background: url("../assets/sedan.png");
+}
+
+#dealership main section#home .categorys .category:nth-child(2) {
+  background: url("../assets/suv.png");
+}
+
+#dealership main section#home .categorys .category:nth-child(3) {
+  background: url("../assets/motos.png");
+}
+
+#dealership main section#home .categorys .category:nth-child(4) {
+  background: url("../assets/imports.png");
+}
+
+#dealership main section#home .categorys .category:nth-child(5) {
+  background: url("../assets/trucks.png");
+}
+
+#dealership main section#home .categorys .category:nth-child(6) {
+  background: url("../assets/others.png");
+}
+
+#dealership main section#home .categorys .category:nth-child(7) {
+  background: url("../assets/vip.png");
+  border: 1px solid #ffdf36;
+}
+
+#dealership main section#home .categorys .category:nth-child(7):hover {
+  box-shadow: 0 0 6px #ffdf36;
+}
+
+#dealership main section#home .myVehicles {
+  width: 66.6875rem;
+  height: 21.8125rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url("../assets/myVehicles.png");
+
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+#dealership main section#home .myVehicles span {
+  border-radius: 0.125rem;
+  background: rgba(211, 19, 47);
+  backdrop-filter: blur(3.5px);
+
+  color: #fff;
+  text-align: center;
+  font-size: 2.01819rem;
+  font-weight: 700;
+
+  padding: 0.4rem 1.5rem;
+  transition: 0.4s;
+}
+
+#dealership main section#home .myVehicles:hover span {
+  background: rgba(211, 19, 47);
+}
+
+/* Vehicles Content */
+
+.vehiclesContent {
+  gap: 1.44rem;
+  display: flex;
+  align-items: center;
+}
+
+.vehiclesContent i {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 0.125rem;
+  border: 2px solid rgba(211, 19, 47);
+  background: radial-gradient(
+      334.87% 334.87% at 70.91% 0%,
+      rgba(211, 19, 47) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(17, 17, 17, 0.85);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 0.75rem;
+}
+
+.vehiclesContent .vehicles {
+  width: 54rem;
+  max-width: 54rem;
+
+  overflow-x: hidden;
+  height: 13rem;
+
+  gap: 0.94rem;
+  display: flex;
+  align-items: center;
+
+  padding: 0 0.5rem;
+}
+
+.vehiclesContent .vehicles .vehicle {
+  width: 9.875rem;
+  height: 12.3125rem;
+  border-radius: 0.125rem;
+  outline: 1px solid rgba(211, 19, 47);
+  background: radial-gradient(
+    1021.91% 100.14% at 100.14% 50%,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.vehiclesContent .vehicles .vehicle:hover {
+  border-radius: 0.125rem;
+  background: radial-gradient(
+      213.5% 121.92% at -37.83% 138.14%,
+      rgba(211, 19, 47) 0%,
+      rgba(166, 1, 58, 0) 100%
+    ),
+    radial-gradient(
+      162.75% 206.37% at 111.11% -38.14%,
+      rgba(211, 19, 47) 0%,
+      rgba(166, 1, 58, 0) 100%
+    ),
+    radial-gradient(
+      323.05% 378.13% at 65.23% 23.31%,
+      #000 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(17, 17, 17, 0.85);
+}
+
+.vehiclesContent .vehicles .vehicle:hover span {
+  border-radius: 0rem 0rem 0.125rem 0.125rem;
+  background: linear-gradient(
+    38deg,
+    rgba(255, 255, 255, 0.35) -37.76%,
+    rgba(255, 255, 255, 0) 165.82%
+  );
+}
+
+.vehiclesContent .vehicles .vehicle img {
+  width: 80%;
+}
+
+.vehiclesContent .vehicles .vehicle h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.30506rem;
+  font-weight: 700;
+
+  top: 0.81rem;
+  position: absolute;
+
+  text-transform: uppercase;
+}
+
+.vehiclesContent .vehicles .vehicle span {
+  width: 9.875rem;
+  height: 2.25rem;
+  border-radius: 0rem 0rem 0.125rem 0.125rem;
+  background: radial-gradient(
+      213.5% 121.92% at -37.83% 138.14%,
+      rgba(211, 19, 47) 0%,
+      rgba(166, 1, 58, 0) 100%
+    ),
+    radial-gradient(
+      162.75% 206.37% at 111.11% -38.14%,
+      rgba(211, 19, 47) 0%,
+      rgba(166, 1, 58, 0) 100%
+    ),
+    radial-gradient(
+      323.05% 378.13% at 65.23% 23.31%,
+      #000 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(17, 17, 17, 0.85);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 1.1875rem;
+  font-weight: 700;
+
+  bottom: 0;
+  position: absolute;
+}
+
+section#category {
+  width: 100%;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+
+  padding: 1rem;
+}
+
+section#category .flyer {
+  width: 100%;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+section#category .flyer .text h2 {
+  color: rgba(17, 17, 17, 0.85);
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: rgba(211, 19, 47);
+  -webkit-text-fill-color: rgba(211, 19, 47);
+  font-size: 3.03756rem;
+  font-weight: 700;
+}
+
+section#category .flyer .text span {
+  color: #fff;
+  font-size: 2.09338rem;
+  font-weight: 700;
+
+  padding: 0.05rem 1.5rem;
+
+  border-radius: 0.125rem;
+  border: 1.058px solid rgba(211, 19, 47);
+}
+
+section#category .flyer img {
+  width: 30%;
+
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+}
+
+section#category .vehicles {
+  width: 100%;
+  gap: 0.94rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#category .vehicles .vehicle {
+  width: 9.875rem;
+  height: 12.3125rem;
+  border-radius: 0.125rem;
+  outline: 1px solid rgba(211, 19, 47);
+  background: radial-gradient(
+    1021.91% 100.14% at 100.14% 50%,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+section#category .vehicles .vehicle:hover {
+  border-radius: 0.125rem;
+  background: radial-gradient(
+      213.5% 121.92% at -37.83% 138.14%,
+      rgba(211, 19, 47) 0%,
+      rgba(166, 1, 58, 0) 100%
+    ),
+    radial-gradient(
+      162.75% 206.37% at 111.11% -38.14%,
+      rgba(211, 19, 47) 0%,
+      rgba(166, 1, 58, 0) 100%
+    ),
+    radial-gradient(
+      323.05% 378.13% at 65.23% 23.31%,
+      #000 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(17, 17, 17, 0.85);
+}
+
+section#category .vehicles .vehicle:hover span {
+  border-radius: 0rem 0rem 0.125rem 0.125rem;
+  background: linear-gradient(
+    38deg,
+    rgba(255, 255, 255, 0.35) -37.76%,
+    rgba(255, 255, 255, 0) 165.82%
+  );
+}
+
+section#category .vehicles .vehicle img {
+  width: 80%;
+}
+
+section#category .vehicles .vehicle h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.30506rem;
+  font-weight: 700;
+
+  top: 0.81rem;
+  position: absolute;
+
+  text-transform: uppercase;
+}
+
+section#category .vehicles .vehicle span {
+  width: 9.875rem;
+  height: 2.25rem;
+  border-radius: 0rem 0rem 0.125rem 0.125rem;
+  background: radial-gradient(
+      213.5% 121.92% at -37.83% 138.14%,
+      rgba(211, 19, 47) 0%,
+      rgba(166, 1, 58, 0) 100%
+    ),
+    radial-gradient(
+      162.75% 206.37% at 111.11% -38.14%,
+      rgba(211, 19, 47) 0%,
+      rgba(166, 1, 58, 0) 100%
+    ),
+    radial-gradient(
+      323.05% 378.13% at 65.23% 23.31%,
+      #000 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(17, 17, 17, 0.85);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 1.1875rem;
+  font-weight: 700;
+
+  bottom: 0;
+  position: absolute;
+}
+
+section#vehiclePreview {
+  width: 100%;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem 0;
+}
+
+section#vehiclePreview .flyer {
+  width: 100%;
+}
+
+section#vehiclePreview .flyer .preview {
+  height: 16rem;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  padding: 0 1rem;
+}
+
+section#vehiclePreview .flyer .preview img {
+  width: 25%;
+  right: 3rem;
+  position: absolute;
+}
+
+section#vehiclePreview .flyer .preview .interactions h4 {
+  color: #fff;
+  font-size: 2.12981rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+section#vehiclePreview .flyer .preview .interactions h2 {
+  color: rgba(17, 17, 17, 0.85);
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: rgba(211, 19, 47);
+  -webkit-text-fill-color: rgba(211, 19, 47);
+  font-size: 3.03756rem;
+  font-weight: 700;
+
+  line-height: 120%;
+}
+
+section#vehiclePreview .flyer .preview .interactions .buttons {
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+section#vehiclePreview .flyer .preview .interactions .buttons button {
+  width: 8.6875rem;
+  height: 2.125rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  outline: none;
+}
+
+section#vehiclePreview
+  .flyer
+  .preview
+  .interactions
+  .buttons
+  button:first-child {
+  border: none;
+  border-radius: 0.125rem;
+  border: 1px solid rgba(211, 19, 47);
+
+  background-color: transparent;
+}
+
+section#vehiclePreview
+  .flyer
+  .preview
+  .interactions
+  .buttons
+  button:first-child:hover {
+    background: radial-gradient(334.87% 334.87% at 70.91% 0%, rgba(211, 19, 47) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(17, 17, 17, 0.85);
+}
+
+section#vehiclePreview
+  .flyer
+  .preview
+  .interactions
+  .buttons
+  button:last-child {
+    border-radius: 0.125rem;
+    border: 1px solid #FFDA00;
+    background: radial-gradient(213.5% 121.92% at -37.83% 138.14%, #FFDA00 0%, rgba(255, 218, 0, 0.00) 100%), radial-gradient(162.75% 206.37% at 111.11% -38.14%, #FFDA00 0%, rgba(255, 218, 0, 0.00) 100%), radial-gradient(323.05% 378.13% at 65.23% 23.31%, #000 0%, rgba(0, 0, 0, 0.00) 100%), rgba(17, 17, 17, 0.85);
+}
+
+section#vehiclePreview
+  .flyer
+  .preview
+  .interactions
+  .buttons
+  button:last-child:hover {
+  border: 1px solid #ffdf36;
+  background: radial-gradient(
+      58.78% 420.97% at 50% 50%,
+      #ffdf36 0%,
+      rgba(255, 223, 54, 0) 100%
+    ),
+    rgba(255, 223, 54, 0.15);
+  color: #2d2d2d;
+
+  transition: 200ms;
+}
+
+section#vehiclePreview .flyer .vehicleStats {
+  width: 100%;
+  height: 3.9375rem;
+  background: rgba(255, 255, 255, 0.05);
+
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#vehiclePreview .flyer .vehicleStats .info {
+  height: 2.75756rem;
+
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.05);
+
+  padding: 0 1rem;
+}
+
+section#vehiclePreview .flyer .vehicleStats .info i {
+  color: white;
+  font-size: 1.2rem;
+}
+
+section#vehiclePreview .flyer .vehicleStats .info p {
+  color: #fff;
+  font-size: 1.45131rem;
+  font-weight: 700;
+}
+
+section#vehiclePreview .moreVehicles h5 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.64538rem;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section#vehiclePreview .moreVehicles h5 b {
+  color: #ffdf36;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title .search {
+  width: 50.8125rem;
+  height: 1.8125rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.05);
+
+  padding-left: 1.81rem;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 0.94rem;
+  margin-right: 0.65rem;
+}
+
+.title .search i {
+  color: white;
+  font-size: 0.75rem;
+  margin-right: 1.4rem;
+}
+
+.title .search input {
+  width: 46.875rem;
+  height: 1.8125rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.07);
+
+  border: none;
+  outline: none;
+
+  padding: 0 1rem;
+
+  color: white;
+}
+
+.title button:first-child {
+  width: 6rem;
+  height: 1.4375rem;
+  border-radius: 0.125rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  font-size: 0.86238rem;
+  font-weight: 700;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.title button:first-child:hover {
+  border-radius: 0.125rem;
+  box-shadow: inset 0 0 0 2px rgba(211, 19, 47);
+  background: radial-gradient(
+      334.87% 334.87% at 70.91% 0%,
+      rgba(211, 19, 47) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(17, 17, 17, 0.85);
+}
+
+.title button:last-child {
+  width: 5.15906rem;
+  height: 1.389rem;
+  border-radius: 0.125rem;
+  border: 1.058px solid rgba(211, 19, 47);
+
+  background: transparent;
+
+  color: #fff;
+  text-align: center;
+  font-size: 0.86238rem;
+  font-weight: 700;
+}
+
+.title button:last-child:hover {
+  box-shadow: inset 0 0 0 2px rgba(211, 19, 47);
+  background: radial-gradient(
+      334.87% 334.87% at 70.91% 0%,
+      rgba(211, 19, 47) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(17, 17, 17, 0.85);
+}
+
+button {
+  cursor: pointer;
+}
